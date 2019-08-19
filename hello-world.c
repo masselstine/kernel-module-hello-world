@@ -21,6 +21,8 @@ MODULE_VERSION("0.1");
 static int __init hello_world_init(void) {
   /* print "Hello World" to the dmesg on module load */
   printk(KERN_INFO "Hello World\n");
+
+  return 0;
 }
 
 /* Last call before module unload, complete any cleanup */
